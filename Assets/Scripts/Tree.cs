@@ -23,7 +23,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             return;
         
             player.Hp -= 15; 
-        UIManager.Instance.ShowNotiText($"Hurt-15\nHP: {player.Hp}");
+        UIManager.Instance.ShowNotiText($"Hurt -15\nHP: {player.Hp}");
 
         if (player.Hp <= 0)
         {

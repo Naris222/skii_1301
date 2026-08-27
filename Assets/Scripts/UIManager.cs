@@ -25,7 +25,6 @@ public class UIManager : MonoBehaviour
     public void ShowNotiText(string s)
     {
         notiText.text = s;
-        
     }
-    }
+    
 }
