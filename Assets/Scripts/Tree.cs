@@ -22,9 +22,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (player != null)
             return;
         
-        
             player.Hp -= 15; 
-        
+        UIManager.Instance.ShowNotiText($"Hurt-15\nHP: {player.Hp}");
+
+        if (player.Hp <= 0)
+        {
+            player.Hp = 0;
+            UIManager.Instance.ShowNotiText($"You are dead!!!!\nPoints: {player.Point}");
+        }
+
     }
 
     private void OnCollisionExit(Collision collision)

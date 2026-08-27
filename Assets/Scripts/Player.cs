@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private int point;
-
     public int Point
     {
         get { return point; }
@@ -23,7 +22,6 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private int hp;
-
     public int Hp
     {
         get { return hp; }
