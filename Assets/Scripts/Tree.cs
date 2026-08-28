@@ -29,7 +29,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             player.Hp = 0;
             UIManager.Instance.ShowNotiText($"You are dead!!!!\nPoints: {player.Point}");
+            Time.timeScale = 0f;
+            UIManager.Instance.ShowHideRestartButton(true);
         }
+
 
     }
 
